@@ -13,13 +13,51 @@
     <nav>
         <h1> ¡Bienvenido al equipo maravilla! </h1>
     </nav>
-    <div class="divIntegrante">
-        <img src="./multimedia/Agustin.png">
-        <h2>Agustin Cigaran Torres</h2>
-        <p>Mi nombre es Agustin Cigaran, soy estudiante de la carrera Analista en informatica en UCU sede Salto. Actualmente estoy cursando Desarrollo web y mobile, redes de datos, testing y base de datos 1.<br>
-        <br>Me gustan mucho los videojuegos, tanto mirar videos o noticias sobre ellos como pensar en ideas o intentar programar algo en Unity 3D.<br>
-        <br>Por otro lado tambien me gustan mucho los animales, actualmente tengo dos perros llamados Logan y Emilio.</p>
-    </div>
+    <section onclick="mostrarEstadisticas()" class="divIntegrante">
+        <div id="visible" class="divImagen">
+            <img src="./multimedia/Agustin.png">
+        </div>
+        <div id="visible1" class="divTextos">
+            <h2 id="achedos">Agustin Cigaran</h2>
+            <p id="p1">Mi nombre es Agustin Cigaran, soy estudiante de la carrera Analista en informatica en UCU sede Salto. Actualmente estoy cursando Desarrollo web y mobile, redes de datos, testing y base de datos 1.<br>
+            <br>Me gustan mucho los videojuegos, tanto mirar videos o noticias sobre ellos como pensar en ideas o intentar programar algo en Unity 3D.<br>
+            <br>Por otro lado tambien me gustan mucho los animales, actualmente tengo dos perros llamados Logan y Emilio.<br>
+        <br>Mientras que mi novia tiene tres perras llamadas Emma, Sara y Juana, pero no viven con nosotros actualmente.</p>
+            <!-- <button  class="conocerMas" type="button">Descubrir más</button> -->
+        </div>
+        <div id="no-visible" class="divTextos2">
+            <h2 id="achedosdos">Estadisticas</h2>
+            <p>Estas son mis estadisticas dentro de la programación web.<br>
+            <br>Por el momento no son nada de otro mundo pero espero poder mejorar eventualmente.<br>
+        <br>Y para finalizar quiero dejar esta cita de Bolsonaro <q>O erro da ditadura foi torturar e não matar!</q></p>
+        </div>
+        <div id="no-visible1" class="divImagen2">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Naruto_Uzumaki_Stats.svg/2048px-Naruto_Uzumaki_Stats.svg.png" class="stats">
+            <table>
+                <tr>
+                    <th>Genero</th>
+                    <td>Macho</td>
+                </tr>
+                <tr>
+                    <th>Edad</th>
+                    <td>Veinte y pico</td>
+                </tr>
+                <tr>
+                    <th>Color de pelo</th>
+                    <td>Oscuro</td>
+                </tr>
+                <tr>
+                    <th>Altura</th>
+                    <td>Alto</td>
+                </tr>
+                <tr>
+                    <th>Color de ojos</th>
+                    <td>Negruzcos</td>
+                </tr>
+            </table>
+        </div>
+        </section>
     <script src="./logica/script.js" ></script>
+    <audio src="./multimedia/musicaFondo.MP3" controls autoplay="true" loop="true"></audio>
 </body>
 </html>
