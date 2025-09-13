@@ -1,0 +1,46 @@
+html{
+    font-family: "Lilita One", sans-serif;
+    background-image: url("./texturaFondo.png");
+    text-align: center;
+}
+nav{
+    background-image: url("./texturaNav.png");
+    background-color: #F86D63;
+    padding: 5px;
+}
+nav h1{
+    font-size: 2em;
+}
+.divIntegrante{
+    background-image: url("./texturaDiv.png");
+    background-color: #9C1107;
+    border-radius: 5px;
+    margin: 25px auto;
+    display: flex;
+    padding: 5px;
+    width: 45%;
+}
+.divIntegrante:hover{
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+}
+h2{
+    background-color: #9C1107;
+    color: goldenrod;
+    border: 5px;
+    border-color: black;
+    position: absolute;
+    margin-top: 2.5%;
+    margin-left: 24%;
+    font-size: 1.8em;
+    width: 20%;
+}
+p{
+    margin: 20% 20px 0 0px;
+    display: inline-block;
+    font-size: 1.4em;
+    width: 45%;
+}
+.divIntegrante img{
+    width: 55%;
+}
