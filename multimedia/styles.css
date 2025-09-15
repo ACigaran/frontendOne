@@ -11,6 +11,18 @@ nav{
 nav h1{
     font-size: 2em;
 }
+nav h6{
+    text-shadow: 0 0 15px black;
+    display: inline-block;
+    padding-inline: 5em;
+    font-size: 1.6em;
+    cursor: pointer;
+    color: black;   
+}
+nav h6:hover{
+    color: aliceblue;
+    text-shadow: 0 0 25px whitesmoke;
+}
 .divIntegrante{
     background-image: url("./texturaDiv.png");
     background-color: #9C1107;
@@ -19,8 +31,8 @@ nav h1{
     margin: 25px auto;
     display: flex;
     padding: 5px;
-    width: 45%;
-    height: 635px;
+    width: 98%;
+    height: 100%;
 }
 .divIntegrante:hover{
     box-shadow: 0 0 10px black;
@@ -37,31 +49,32 @@ nav h1{
     color: goldenrod;
     border: 5px;
     border-color: black;
-    display: inline;
-    margin-top: 5%;
-    margin-left: 25%;
+    /* display: inline; */
+    /* margin-top: 5%;
+    margin-left: 25%; */
     font-size: 1.8em;
     width: 20%;
+    margin: auto;
 }
 #p1{
-    margin: 5% 0px 0 25%;
+    margin: 5% 0px 0 0%;
     display: inline-block;
-    font-size: 1.4em;
+    font-size: 1.8em;
     width: 65%;
 }
 .divIntegrante img{
     background-color: #9C1107;
     border-radius: 5px;
-    width: 150%;
+    width: 85%;
 }
-.conocerMas{
+/* .conocerMas{
     font-family: "Lilita One", sans-serif;
     margin: 10% 0px 0 25%;
     border-radius: 8px;
     font-size: 1.5em;
     height: 10%;
     width: 45%;
-}
+} */
 .conocerMas:hover{
     background-color: #D6D3D1;
     color: #003775;
@@ -80,26 +93,29 @@ nav h1{
     border: 5px;
     border-color: black;
     display: inline;
-    margin-top: 5%;
+    /* margin-top: 5%; */
     /* margin-left: 25%; */
+    margin: auto;
     font-size: 1.8em;
     width: 20%;
 }
 #no-visible, p{
-    display: inline-block;
-    font-size: 1.4em;
+    /* display: inline-block; */
+    font-size: 1.6em;
     width: 75%;
+    margin: auto;
 }
 #no-visible1{
     display: none;
     /* position: absolute; */
-    width: 35%;
-    margin: 0% 17% 0% 0;
+    width: 45%;
+    /* margin: 0% 17% 0% 0; */
 }
 table{
     background-color: goldenrod;
-    width: 440px;
+    width: 560px;
     height: 190px;
+    margin: auto;
 }
 th{
     background-color: #9C1107;
