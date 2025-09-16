@@ -17,7 +17,7 @@ nav h6{
     padding-inline: 5em;
     font-size: 1.6em;
     cursor: pointer;
-    color: black;   
+    color: black;    
 }
 nav h6:hover{
     color: aliceblue;
@@ -30,91 +30,62 @@ nav h6:hover{
     border-radius: 5px;
     margin: 25px auto;
     display: flex;
-    padding: 5px;
-    width: 98%;
-    height: 100%;
+    flex-wrap: wrap; /* Corrección 1: Permite que los elementos pasen a la siguiente línea */
+    padding: 20px; /* Aumentamos el padding para un mejor espacio */
+    width: 90%; /* Corrección 2: Usamos un ancho fijo para todos los contenedores */
+    height: auto; /* Corrección 3: Usar auto para que la altura se ajuste al contenido */
+    justify-content: center; /* Centra los elementos */
 }
 .divIntegrante:hover{
     box-shadow: 0 0 10px black;
     cursor: pointer;
 }
+.divImagen, .divImagen2, .divTextos, .divTextos2 {
+    width: 45%; /* Corrección 4: Le damos un ancho fijo a todos los divs internos para que se acomoden correctamente */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+    padding: 10px; /* Añade un padding para separar del borde */
+}
+
+.divIntegrante img {
+  background-color: #9C1107;
+  border-radius: 5px;
+  width: 100%;     
+  height: auto;
+  display: block;
+}
+
+#p1, .divTextos p {
+    font-size: 2em;
+    width: 100%; /* Corrección 6: El párrafo ocupa el 100% de su contenedor */
+    margin: 0;
+}
+
+#achedos, #achedosdos {
+    background-color: #9C1107;
+    color: goldenrod;
+    font-size: 1.8em;
+    width: 100%; /* Corrección 7: El h2 ocupa el 100% de su contenedor */
+    margin: 0;
+    text-align: center; /* Centramos el texto dentro del h2 */
+}
+
+/* El resto del CSS */
 #visible{
     display: block;
 }
 #visible1{
     display: block;
 }
-#achedos{
-    background-color: #9C1107;
-    color: goldenrod;
-    border: 5px;
-    border-color: black;
-    /* display: inline; */
-    /* margin-top: 5%;
-    margin-left: 25%; */
-    font-size: 1.8em;
-    width: 20%;
-    margin: auto;
-}
-#p1{
-    margin: 5% 0px 0 0%;
-    display: inline-block;
-    font-size: 1.8em;
-    width: 65%;
-}
-.divIntegrante img{
-    background-color: #9C1107;
-    border-radius: 5px;
-    width: 85%;
-}
-/* .conocerMas{
-    font-family: "Lilita One", sans-serif;
-    margin: 10% 0px 0 25%;
-    border-radius: 8px;
-    font-size: 1.5em;
-    height: 10%;
-    width: 45%;
-} */
-.conocerMas:hover{
-    background-color: #D6D3D1;
-    color: #003775;
-    cursor: pointer;
-}
-.conocerMas:active{
-    background-color: #9C1107;
-    color: goldenrod;
-}
-#no-visible{
+#agustinNo-visible, #agustinNo-visible1, #brahianNo-visible, #brahianNo-visible1 {
     display: none;
-}
-#achedosdos{
-    background-color: #9C1107;
-    color: goldenrod;
-    border: 5px;
-    border-color: black;
-    display: inline;
-    /* margin-top: 5%; */
-    /* margin-left: 25%; */
-    margin: auto;
-    font-size: 1.8em;
-    width: 20%;
-}
-#no-visible, p{
-    /* display: inline-block; */
-    font-size: 1.6em;
-    width: 75%;
-    margin: auto;
 }
 #no-visible1{
     display: none;
-    /* position: absolute; */
-    width: 45%;
-    /* margin: 0% 17% 0% 0; */
 }
 table{
     background-color: goldenrod;
-    width: 560px;
-    height: 190px;
+    width: 100%; /* La tabla ocupa el 100% de su contenedor */
+    height: auto;
     margin: auto;
 }
 th{
@@ -122,6 +93,7 @@ th{
     color: whitesmoke;
     padding: 5px;
 }
+
 td{
     background-color: #3C0B0C;
     color: whitesmoke;
