@@ -13,28 +13,28 @@
     <nav>
         <h1> ¡Bienvenido al equipo maravilla! </h1>
         <a href="#agustinSeccion"><h6>AGUSTIN</h6></a>
-        <a><h6>BRAHIAN</h6></a>
-        <a><h6>MATIAS</h6></a>
+        <a href="#brahianSeccion"><h6>BRAHIAN</h6></a>
+        <a href="#matiasSeccion"><h6>MATIAS</h6></a>
     </nav>
-    <section id="agustinSeccion" onclick="mostrarEstadisticas()" class="divIntegrante">
-        <div id="visible" class="divImagen">
+
+    <section id="agustinSeccion" onclick="mostrarOcultar('agustin')" class="divIntegrante">
+        <div id="agustinVisible" class="divImagen">
             <img src="./multimedia/Agustin.png">
         </div>
-        <div id="visible1" class="divTextos">
+        <div id="agustinVisible1" class="divTextos">
             <h2 id="achedos">Agustin Cigaran</h2>
             <p id="p1">Mi nombre es Agustin Cigaran, soy estudiante de la carrera Analista en informatica en UCU sede Salto. Actualmente estoy cursando Desarrollo web y mobile, redes de datos, testing y base de datos 1.<br>
             <br>Me gustan mucho los videojuegos, tanto mirar videos o noticias sobre ellos como pensar en ideas o intentar programar algo en Unity 3D.<br>
             <br>Por otro lado tambien me gustan mucho los animales, actualmente tengo dos perros llamados Logan y Emilio.<br>
-        <br>Mientras que mi novia tiene tres perras llamadas Emma, Sara y Juana, pero no viven con nosotros actualmente.</p>
-            <!-- <button  class="conocerMas" type="button">Descubrir más</button> -->
+            <br>Mientras que mi novia tiene tres perras llamadas Emma, Sara y Juana, pero no viven con nosotros actualmente.</p>
         </div>
-        <div id="no-visible" class="divTextos2">
-            <h2 id="achedosdos">Estadisticas</h2>
-            <p>Estas son mis estadisticas dentro de la programación web.<br>
-            <br>Por el momento no son nada de otro mundo pero espero poder mejorar eventualmente.<br>
-        <br>Y para finalizar quiero dejar esta cita de Bolsonaro <q>O erro da ditadura foi torturar e não matar!</q></p>
+        <div id="agustinNo-visible" class="divTextos2">
+            <h2 id="achedos">Estadisticas</h2>
+            <p id="p1">Estas son mis estadisticas dentro de la programación web.<br>
+            <br>Trato.<br>
+            <br>Y para finalizar quiero dejar esta cita de Bolsonaro <q>O erro da ditadura foi torturar e não matar!</q></p>
         </div>
-        <div id="no-visible1" class="divImagen2">
+        <div id="agustinNo-visible1" class="divImagen2">
             <img src="./multimedia/agustinEstadisticas.png" class="stats">
             <table>
                 <tr>
@@ -59,7 +59,55 @@
                 </tr>
             </table>
         </div>
+    </section>
+
+    <section id="brahianSeccion" onclick="mostrarOcultar('brahian')" class="divIntegrante">
+        <div id="brahianVisible" class="divImagen">
+            <img src="./multimedia/Brahian.png" class="brahian-imagen">
+        </div>
+        <div id="brahianVisible1" class="divTextos">
+            <h2 id="achedos">Brahian Núñez</h2>
+            <p id="brahianP1">Hola! Mi nombre es Brahian Nuñez, tambien soy estudiante de la carrera Analista en informatica en UCU sede Salto.
+            <br><br>Soy docente de informatica en secundaria, Egresado del CERP y hace tres años que ejerzo.
+            <br><br>En mi tiempo libre, me gusta mucho practicar deportes, desde ir al gimnasio o jugar futbol con mis compañeros.
+            <br><br>Tambien soy un gran aficionado a de la nba y la formula 1.</p>
+        </div>
+        <div id="brahianNo-visible" class="divTextos2">
+            <h2 id="achedos">Estadisticas</h2>
+            <p id="p1">Estas son mis estadisticas dentro de la programación web.<br>
+            <br>Actualemnte mis habilidades no son nada de otro mundo, sin embargo, con esfuezo se que lograré superarme.<br>
+            <br>Continuando con el planteo de mi compañero. El éxito es la suma de pequeños esfuerzos repetidos <q>día tras día"</q> de Robert Collier.</p>
+        </div>
+        <div id="brahianNo-visible1" class="divImagen2">
+            <img src="./multimedia/estadísticas-Brahian.png" class="stats">
+            <table>
+                <tr>
+                    <th>Genero</th>
+                    <td>Masculino</td>
+                </tr>
+                <tr>
+                    <th>Edad</th>
+                    <td>Veintinueve</td>
+                </tr>
+                <tr>
+                    <th>Color de pelo</th>
+                    <td>Castaño oscuro</td>
+                </tr>
+                <tr>
+                    <th>Altura</th>
+                    <td>1.85m</td>
+                </tr>
+                <tr>
+                    <th>Color de ojos</th>
+                    <td>Marrón</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section id="matiasSeccion" onclick="mostrarOcultar('matias')" class="divIntegrante">
         </section>
+
     <script src="./logica/script.js" ></script>
     <audio src="./multimedia/musicaFondo.MP3" controls autoplay="true" loop="true"></audio>
 </body>
