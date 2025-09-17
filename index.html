@@ -105,7 +105,7 @@
         </div>
     </section>
 
-    <section id="matiasSeccion" onclick="mostrarOcultar('matias')" class="divIntegrante">
+    <section id="matiasSeccion" onclick="mostrarOcultar('matias'); escribirConDelay()" class="divIntegrante">
         <div class="divImagen matiasVisible fotito-M"></div>
         <div class="divTextos matiasVisible">
             <h2 id="achedos">Matias Perez</h2>
@@ -114,7 +114,9 @@
             <br>Tengo 4 perros y 4 gatos. Mi animal favorito es el Tigre.<br>
             <br>Me gusta mucho el area de software pero tambien, de la mano con la pasion por los videojuegos, me gusta el ensamblado de computadoras.</p>
         </div>
-
+        <div class="matiasNo-visible">
+            <p id="matias-parrafo"></p>
+        </div>
         </section>
 
     <script src="./logica/script.js" ></script>

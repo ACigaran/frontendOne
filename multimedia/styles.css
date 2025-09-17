@@ -114,3 +114,17 @@ td{
     background-size: cover;
     transition: background-image 1.5s
 }
+
+.matiasNo-visible {
+    height: 70vh;            
+    display: flex;            
+    justify-items: center;  
+    align-items: center;      
+    text-align: center;
+}
+
+#matias-parrafo {
+    font-size: 4rem;
+    width: 70%; 
+    margin: 0;
+}
