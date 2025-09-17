@@ -119,6 +119,31 @@
         </div>
         </section>
 
+        <section class="formularioEpico">
+
+            <h1>Contacta con nosotros!</h1>
+
+    <form>
+        <p>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required>
+        </p>
+
+        <p>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required>
+        </p>
+
+        <p>
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea>
+        </p>
+
+        <p>
+            <button onclick="formularioEnviado()">Enviar</button>
+        </p>
+    </form>
+        </section>
     <script src="./logica/script.js" ></script>
     <audio src="./multimedia/musicaFondo.MP3" controls autoplay="true" loop="true"></audio>
 </body>
