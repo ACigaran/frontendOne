@@ -158,9 +158,10 @@ button:active{
     height: 90%; 
     justify-content: center; 
 }
-footer, img{
+img{
     width: 50px;
     display: inline-flex;
     margin-right: 5px;
     margin-left: 5px;
+    cursor: pointer;
 }
