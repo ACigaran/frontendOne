@@ -23,6 +23,7 @@ nav h6:hover{
     color: aliceblue;
     text-shadow: 0 0 25px whitesmoke;
 }
+
 .divIntegrante{
     background-image: url("./texturaDiv.png");
     background-color: #9C1107;
@@ -30,20 +31,20 @@ nav h6:hover{
     border-radius: 5px;
     margin: 25px auto;
     display: flex;
-    flex-wrap: wrap; /* Corrección 1: Permite que los elementos pasen a la siguiente línea */
-    padding: 20px; /* Aumentamos el padding para un mejor espacio */
-    width: 90%; /* Corrección 2: Usamos un ancho fijo para todos los contenedores */
-    height: auto; /* Corrección 3: Usar auto para que la altura se ajuste al contenido */
-    justify-content: center; /* Centra los elementos */
+    flex-wrap: wrap; 
+    padding: 20px; 
+    width: 90%; 
+    height: auto; 
+    justify-content: center; 
 }
 .divIntegrante:hover{
     box-shadow: 0 0 10px black;
     cursor: pointer;
 }
 .divImagen, .divImagen2, .divTextos, .divTextos2 {
-    width: 45%; /* Corrección 4: Le damos un ancho fijo a todos los divs internos para que se acomoden correctamente */
-    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
-    padding: 10px; /* Añade un padding para separar del borde */
+    width: 45%; 
+    box-sizing: border-box; 
+    padding: 10px;
 }
 
 .divIntegrante img {
@@ -56,7 +57,7 @@ nav h6:hover{
 
 #p1, .divTextos p {
     font-size: 2em;
-    width: 100%; /* Corrección 6: El párrafo ocupa el 100% de su contenedor */
+    width: 100%; 
     margin: 0;
 }
 
@@ -64,9 +65,9 @@ nav h6:hover{
     background-color: #9C1107;
     color: goldenrod;
     font-size: 1.8em;
-    width: 100%; /* Corrección 7: El h2 ocupa el 100% de su contenedor */
+    width: 100%; 
     margin: 0;
-    text-align: center; /* Centramos el texto dentro del h2 */
+    text-align: center; 
 }
 
 /* El resto del CSS */
@@ -84,7 +85,7 @@ nav h6:hover{
 }
 table{
     background-color: goldenrod;
-    width: 100%; /* La tabla ocupa el 100% de su contenedor */
+    width: 100%; 
     height: auto;
     margin: auto;
 }
@@ -97,4 +98,19 @@ th{
 td{
     background-color: #3C0B0C;
     color: whitesmoke;
+}
+
+.fotito-M{
+
+    height: 90vh;
+    background-image: url(MatN.jpeg);
+    background-size: cover;
+    transition: background-image 1.5s;
+    border-radius: 5px;
+}
+
+.fotito-M:hover{
+    background-image: url(MatD.jpeg);
+    background-size: cover;
+    transition: background-image 1.5s
 }

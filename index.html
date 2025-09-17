@@ -12,29 +12,29 @@
 <body>
     <nav>
         <h1> ¡Bienvenido al equipo maravilla! </h1>
-        <a href="#agustinSeccion"><h6>AGUSTIN</h6></a>
-        <a href="#brahianSeccion"><h6>BRAHIAN</h6></a>
-        <a href="#matiasSeccion"><h6>MATIAS</h6></a>
+        <a href="#agustinSeccion" onclick="scrollCentrado(event, 'agustinSeccion')"><h6>AGUSTIN</h6></a>
+        <a href="#brahianSeccion" onclick="scrollCentrado(event, 'brahianSeccion')"><h6>BRAHIAN</h6></a>
+        <a href="#matiasSeccion"  onclick="scrollCentrado(event, 'matiasSeccion')"><h6>MATIAS</h6></a>
     </nav>
 
     <section id="agustinSeccion" onclick="mostrarOcultar('agustin')" class="divIntegrante">
-        <div id="agustinVisible" class="divImagen">
+        <div id="agustinVisible" class="divImagen agustinVisible">
             <img src="./multimedia/Agustin.png">
         </div>
-        <div id="agustinVisible1" class="divTextos">
+        <div id="agustinVisible1" class="divTextos agustinVisible" >
             <h2 id="achedos">Agustin Cigaran</h2>
             <p id="p1">Mi nombre es Agustin Cigaran, soy estudiante de la carrera Analista en informatica en UCU sede Salto. Actualmente estoy cursando Desarrollo web y mobile, redes de datos, testing y base de datos 1.<br>
             <br>Me gustan mucho los videojuegos, tanto mirar videos o noticias sobre ellos como pensar en ideas o intentar programar algo en Unity 3D.<br>
             <br>Por otro lado tambien me gustan mucho los animales, actualmente tengo dos perros llamados Logan y Emilio.<br>
             <br>Mientras que mi novia tiene tres perras llamadas Emma, Sara y Juana, pero no viven con nosotros actualmente.</p>
         </div>
-        <div id="agustinNo-visible" class="divTextos2">
+        <div id="agustinNo-visible" class="divTextos2 agustinNo-visible">
             <h2 id="achedos">Estadisticas</h2>
             <p id="p1">Estas son mis estadisticas dentro de la programación web.<br>
             <br>Trato.<br>
             <br>Y para finalizar quiero dejar esta cita de Bolsonaro <q>O erro da ditadura foi torturar e não matar!</q></p>
         </div>
-        <div id="agustinNo-visible1" class="divImagen2">
+        <div id="agustinNo-visible1" class="divImagen2 agustinNo-visible">
             <img src="./multimedia/agustinEstadisticas.png" class="stats">
             <table>
                 <tr>
@@ -62,23 +62,23 @@
     </section>
 
     <section id="brahianSeccion" onclick="mostrarOcultar('brahian')" class="divIntegrante">
-        <div id="brahianVisible" class="divImagen">
+        <div id="brahianVisible" class="divImagen brahianVisible">
             <img src="./multimedia/Brahian.png" class="brahian-imagen">
         </div>
-        <div id="brahianVisible1" class="divTextos">
+        <div id="brahianVisible1" class="divTextos brahianVisible">
             <h2 id="achedos">Brahian Núñez</h2>
             <p id="brahianP1">Hola! Mi nombre es Brahian Nuñez, tambien soy estudiante de la carrera Analista en informatica en UCU sede Salto.
             <br><br>Soy docente de informatica en secundaria, Egresado del CERP y hace tres años que ejerzo.
             <br><br>En mi tiempo libre, me gusta mucho practicar deportes, desde ir al gimnasio o jugar futbol con mis compañeros.
             <br><br>Tambien soy un gran aficionado a de la nba y la formula 1.</p>
         </div>
-        <div id="brahianNo-visible" class="divTextos2">
+        <div id="brahianNo-visible" class="divTextos2 brahianNo-visible">
             <h2 id="achedos">Estadisticas</h2>
             <p id="p1">Estas son mis estadisticas dentro de la programación web.<br>
             <br>Actualemnte mis habilidades no son nada de otro mundo, sin embargo, con esfuezo se que lograré superarme.<br>
             <br>Continuando con el planteo de mi compañero. El éxito es la suma de pequeños esfuerzos repetidos <q>día tras día"</q> de Robert Collier.</p>
         </div>
-        <div id="brahianNo-visible1" class="divImagen2">
+        <div id="brahianNo-visible1" class="divImagen2 brahianNo-visible">
             <img src="./multimedia/estadísticas-Brahian.png" class="stats">
             <table>
                 <tr>
@@ -106,6 +106,15 @@
     </section>
 
     <section id="matiasSeccion" onclick="mostrarOcultar('matias')" class="divIntegrante">
+        <div class="divImagen matiasVisible fotito-M"></div>
+        <div class="divTextos matiasVisible">
+            <h2 id="achedos">Matias Perez</h2>
+            <p id="p1">Mi nombre es Agustin Cigaran, soy estudiante de la carrera Analista en informatica en UCU sede Salto. Actualmente estoy cursando Desarrollo web y mobile, redes de datos y base de datos 1.<br>
+            <br>Me gustan mucho los videojuegos y mirar series.<br>
+            <br>Tengo 4 perros y 4 gatos. Mi animal favorito es el Tigre.<br>
+            <br>Me gusta mucho el area de software pero tambien, de la mano con la pasion por los videojuegos, me gusta el ensamblado de computadoras.</p>
+        </div>
+
         </section>
 
     <script src="./logica/script.js" ></script>

@@ -1,18 +1,21 @@
 function mostrarOcultar(prefijo) {
-    const divVisible = document.getElementById(prefijo + "Visible");
-    const divVisible1 = document.getElementById(prefijo + "Visible1");
-    const divOculto = document.getElementById(prefijo + "No-visible");
-    const divOculto1 = document.getElementById(prefijo + "No-visible1");
+    const divsVisibles = document.getElementsByClassName(prefijo + "Visible");
+    const divsOcultos = document.getElementsByClassName(prefijo + "No-visible");
     
-    if (divVisible.style.display === "none" && divVisible1.style.display === "none") {
-        divVisible.style.display = "block";
-        divVisible1.style.display = "block";
-        divOculto.style.display = "none";
-        divOculto1.style.display = "none";
-    } else {
-        divVisible.style.display = "none";
-        divVisible1.style.display = "none";
-        divOculto.style.display = "block";
-        divOculto1.style.display = "block";
-    }
+    const visible = divsVisibles[0].style.display === "none"
+
+    for (const div of divsVisibles) div.style.display = visible ? "block" : "none" 
+    for (const div of divsOcultos) div.style.display = visible ? "none" : "block"
+}
+
+function scrollCentrado(event, id) {
+  event.preventDefault(); 
+  const element = document.getElementById(id);
+  const mS = id === 'matiasSeccion' 
+    element.scrollIntoView({
+    behavior: "smooth", 
+    block: mS ? "center" : "start"    
+  });
+
+
 }
