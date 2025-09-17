@@ -161,4 +161,6 @@ button:active{
 footer, img{
     width: 50px;
     display: inline-flex;
+    margin-right: 5px;
+    margin-left: 5px;
 }
