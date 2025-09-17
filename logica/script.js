@@ -42,3 +42,7 @@ function escribir(texto, parrafo, index){
         idEscribir = setTimeout(() => escribir(texto, parrafo, index), 65)
     }
 }
+
+function formularioEnviado(){
+    alert("Formulario enviado con éxito ✅");
+}
